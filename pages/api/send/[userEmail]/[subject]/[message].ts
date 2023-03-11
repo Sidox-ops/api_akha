@@ -5,7 +5,7 @@ import secrets from '../../../../../secrets.json';
 export default function handler(req: any, res: any) {
     const { userEmail, subject, message } = req.query;
 
-    res.status(200).json({ userEmail, subject, message });
+    // res.status(200).json({ userEmail, subject, message });
 
     let transporter = nodemailer.createTransport({
         service: "gmail",
